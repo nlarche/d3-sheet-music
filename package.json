@@ -1,14 +1,16 @@
 {
   "name": "d3-sheet-music",
-  "version": "1.0.0",
+  version: "0.0.0-semantic-released",
   "description": "Sheet music with D3.js",
   "main": "src/index.js",
   "scripts": {
-    "test": "mocha src/index.test.js -w"
+    "test": "mocha src/index.test.js -w",
+    "test:single": "mocha src/index.test.js",
+    "semantic-release": "semantic-release pre && npm publish && semantic-release post"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/nlarche/d3-sheet-music.git"
+    "url": "https://github.com/nlarche/d3-sheet-music.git"
   },
   "keywords": [
     "d3",
@@ -29,6 +31,7 @@
     "chai": "3.3.0",
     "jsdom": "6.5.1",
     "mocha": "2.3.3",
-    "mocha-jsdom": "1.0.0"
+    "mocha-jsdom": "1.0.0",
+    "semantic-release": "^4.3.5"
   }
 }
