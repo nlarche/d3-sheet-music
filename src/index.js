@@ -18,7 +18,7 @@ function getOption(option) {
 		height: 500
 	};
 
-	extend(option || {}, defaultOption);
+	return extend(option || {}, defaultOption);
 }
 
 
@@ -30,7 +30,7 @@ function init(element, option) {
 		return;
 	}
 
-	d3.select(element)
+	svg = d3.select(element)
 		.append('svg')
 		.attr('width', option.width)
 		.attr('height', option.height);
@@ -78,9 +78,11 @@ function createTimeLine(endPosition, mesure, note) {
 
 function createSubLine(start, space, note, taille, positions) {
 	var position = start;
+
+	addPosition(position);
+
 	for (var i = 1; i < note; i++) {
 
-		addPosition(position);
 
 		position += space / note;
 
