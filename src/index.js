@@ -28,10 +28,6 @@ function init(element, option) {
 
 	option = getOption(option);
 
-	if (!option) {
-		return;
-	}
-
 	svg = d3.select(element)
 		.append('svg')
 		.attr('width', option.width)
