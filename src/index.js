@@ -6,7 +6,7 @@ module.exports = {
 };
 
 // poistions of vertival line
-var positions = [];
+var positions;
 var svg; // d3.js component
 
 function getOption(option) {
@@ -18,11 +18,13 @@ function getOption(option) {
 		height: 500
 	};
 
-	return extend(option || {}, defaultOption);
+	return extend(defaultOption, option || {});
 }
 
 
 function init(element, option) {
+
+	positions = [];
 
 	option = getOption(option);
 
