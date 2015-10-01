@@ -4,7 +4,7 @@
   "description": "Sheet music with D3.js",
   "main": "src/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha src/index.test.js -w"
   },
   "repository": {
     "type": "git",
@@ -24,5 +24,11 @@
   "dependencies": {
     "d3": "3.5.6",
     "extend": "3.0.0"
+  },
+  "devDependencies": {
+    "chai": "3.3.0",
+    "jsdom": "6.5.1",
+    "mocha": "2.3.3",
+    "mocha-jsdom": "1.0.0"
   }
 }
