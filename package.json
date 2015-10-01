@@ -32,6 +32,7 @@
     "chai": "3.3.0",
     "commitizen": "1.0.5",
     "cz-conventional-changelog": "1.1.2",
+    "ghooks": "0.3.2",
     "jsdom": "6.5.1",
     "mocha": "2.3.3",
     "mocha-jsdom": "1.0.0",
@@ -39,5 +40,10 @@
   },
   "czConfig": {
     "path": "node_modules/cz-conventional-changelog"
+  },
+  "config": {
+    "ghooks": {
+      "pre-commit": "npm run test:single"
+    }
   }
 }
