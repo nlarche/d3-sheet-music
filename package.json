@@ -20,5 +20,9 @@
   "bugs": {
     "url": "https://github.com/nlarche/d3-sheet-music/issues"
   },
-  "homepage": "https://github.com/nlarche/d3-sheet-music#readme"
+  "homepage": "https://github.com/nlarche/d3-sheet-music#readme",
+  "dependencies": {
+    "d3": "3.5.6",
+    "extend": "3.0.0"
+  }
 }
