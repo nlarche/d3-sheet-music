@@ -1,0 +1,24 @@
+{
+  "name": "d3-sheet-music",
+  "version": "1.0.0",
+  "homepage": "https://github.com/nlarche/d3-sheet-music",
+  "authors": [
+    "nilar <nicolas.larche@rca.fr>"
+  ],
+  "description": "Sheet music with D3.js",
+  "main": "src/index.js",
+  "moduleType": [],
+  "keywords": [
+    "d3",
+    "sheet",
+    "music"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}
