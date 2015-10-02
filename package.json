@@ -2,8 +2,10 @@
   "name": "d3-sheet-music",
   "version": "0.0.0-semantic-released",
   "description": "Sheet music with D3.js",
-  "main": "src/index.js",
+  "main": "dist/index.js",
   "scripts": {
+    "prebuild": "rm -rf dist && mkdir dist",
+    "build": "gulp build",
     "commit": "git-cz",
     "check-coverage": "istanbul check-coverage --statements 100 --branches 100 --functions 100 --lines 100",
     "report-coverage": "cat ./coverage/lcov.info | codecov",
@@ -31,17 +33,21 @@
     "extend": "3.0.0"
   },
   "devDependencies": {
+    "browserify": "11.2.0",
     "chai": "3.3.0",
     "codecov.io": "0.1.6",
     "commitizen": "1.0.5",
     "cz-conventional-changelog": "1.1.2",
     "ghooks": "0.3.2",
+    "gulp": "3.9.0",
     "install": "0.1.8",
     "istanbul": "0.3.21",
     "jsdom": "6.5.1",
     "mocha": "2.3.3",
     "mocha-jsdom": "1.0.0",
-    "semantic-release": "^4.3.5"
+    "semantic-release": "^4.3.5",
+    "vinyl-buffer": "1.0.0",
+    "vinyl-source-stream": "1.1.0"
   },
   "czConfig": {
     "path": "node_modules/cz-conventional-changelog"
