@@ -40,6 +40,7 @@
     "cz-conventional-changelog": "1.1.2",
     "ghooks": "0.3.2",
     "gulp": "3.9.0",
+    "gulp-uglify": "1.4.1",
     "install": "0.1.8",
     "istanbul": "0.3.21",
     "jsdom": "6.5.1",
